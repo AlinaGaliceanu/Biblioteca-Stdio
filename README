@@ -1,0 +1,25 @@
+Galiceanu Alina Madalina 332CA, Tema 2 SO
+
+In rezolvarea temei am urmat indicatiile din enunt si am implementat
+functiile prezente in fisiersul so_stdio.h.
+Functia so_fopen: Am folosit functia "open" pentru deschiderea fisierului
+				si pentru initializarea campurilor folosite pe parcursul
+				implementarii temei.
+
+Functia so_fclose: Inchide fisierul cu ajutorul functiei close si 
+				elibereaza memoria alocata in momentul deschiderii fisierului
+
+Functia fgetc: Citeste in bufferul structurii bytesRead elemente si intoarce
+			cate un caracter, apoi la epuizarea valorilor din buffer, citeste
+			din nou, daca mai sunt valori disponibile in fisier.
+
+Functiile fread si fwrite le-am implementat prin apelari consecutive are 
+			functiilor fgetc si fputc.
+
+Functia fflush pentru aceasta functie am adaugat un flag in structura ce
+			indica ultima operatie efectuata in fisier, iar in cazul in care
+			ultima operatie era una de scriere iar datele din bufferul 
+			structurii nu au fost scrise in fisier, fflush le scrie.
+
+Functiile so_popen si so_pclose am urmat indicatiile din enunt si m-am ajutat de 
+			informatii din laboratorul 3.
